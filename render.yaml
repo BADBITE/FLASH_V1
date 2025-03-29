@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: FLASH-V1 
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeploy: true
+    envVars:
+      - key: SESSION_ID
+        value: flash_v1#BwR7vNRfsIxxVDlsCDcqq0IIs-X6bn9KLh16Q-3RULw
+      - key: MODE
+        value: private
+      - key: AUTO_READ_STATUS
+        value: true
+      - key: AUTO_REPLY
+        value: false
+      - key: ALIVE_IMG
+        value: https://files.catbox.moe/n20dkj.jpg
+      - key: MENU_IMG
+        value: https://files.catbox.moe/n20dkj.jpg
+      - key: PREFIX
+        value: .
+      - key: OMDB_API_KEY
+        value: 76cb7f39
